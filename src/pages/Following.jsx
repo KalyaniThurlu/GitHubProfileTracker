@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { Box, IconButton, Grid } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -13,13 +13,10 @@ const Following = () => {
         if (globalState.userObject?.login)
             getUserFollowingData(globalState.userObject.login)
     }, [])
-
     const scrollContainerRef = useRef(null);
-
     const scrollLeft = () => {
         scrollContainerRef.current.scrollBy({ left: -300, behavior: 'smooth' });
     };
-
     const scrollRight = () => {
         scrollContainerRef.current.scrollBy({ left: 300, behavior: 'smooth' });
     };

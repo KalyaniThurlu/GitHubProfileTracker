@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import Highcharts, { color } from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import Drilldown from 'highcharts/modules/drilldown';

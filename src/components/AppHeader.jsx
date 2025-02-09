@@ -51,9 +51,9 @@ const AppHeader = () => {
         searchApplied: true,
         chipValue: state.gitHubUserName,
         gitHubUserName: '',
-        showWarning:false,
-        warningMessage:'',
-        messageSeverity:''
+        showWarning: false,
+        warningMessage: '',
+        messageSeverity: ''
       }))
     } else {
       setState(prevState => ({ ...prevState, showWarning: true, warningMessage: "Please enter github user name!", messageSeverity: 'warning' }))
@@ -105,7 +105,7 @@ const AppHeader = () => {
                 size='small'
                 id="outlined-uncontrolled"
                 value={state.gitHubUserName}
-                placeholder={state.chipValue === '' ? 'Enter GitHub User Name':''}
+                placeholder={state.chipValue === '' ? 'Enter GitHub User Name' : ''}
                 onChange={handleChange}
                 sx={{ marginBottom: { xs: 1, sm: 0 }, bgcolor: 'white', borderRadius: 1, width: { xs: '100%', sm: 300 } }}
                 InputProps={{

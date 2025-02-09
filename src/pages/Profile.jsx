@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Box, Avatar, Typography, Grid, Link, Paper } from '@mui/material';
 import UserContext from '../context/UserContext';
 
